@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-my-component',
-  templateUrl: './my-component.component.html',
-  styleUrl: './my-component.component.css'
+  selector: 'app-fake-store-api',
+  templateUrl: './fake-store-api.component.html',
+  styleUrl: './fake-store-api.component.css'
 })
-export class MyComponentComponent {
+export class FakeStoreApiComponent {
+
 
   ngOnInit(): void {
     // Implement your initialization logic here
@@ -25,5 +26,6 @@ export class MyComponentComponent {
      }
     )
   }
+
 
 }
