@@ -1,0 +1,23 @@
+<div class="container mt-8">
+    <table class="table table-hover">
+      <thead>
+        <tr>
+          <th scope="col"  class="col-4">#</th>
+          <th scope="col"  class="col-4">Title</th>
+          <th scope="col"  class="col-4">Price</th>
+          <th scope="col"  class="col-4">Image</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of ItemsArray; let i = index">
+          <th scope="row">{{ i + 1 }}</th>
+          <td>{{ item?.title }}</td>
+          <td>${{ item?.price.toFixed(2) }}</td>
+          <td>
+            <img [src]="item.image" alt="{{ item?.title }}" width="100" height="100">
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  
